@@ -1,12 +1,16 @@
 ---
 title: Urban
 ---
+<link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
 
 <section class="hero diagonal">
-	<div class="container">
-		<h2 class="editable">We build websites</h2>
-		<p class="subtext editable">This is the <strong>Urban</strong> template from <a href="https://cloudcannon.com/">CloudCannon</a>. Urban is a strong foundation for the web presence of your agency.</p>
+	<div class="container" style="display: flex;">
+		<img src="{{ site.baseurl }}/images/pikachu.png" width="300">
+        <div style="margin-left: 100px;">
+        <h2 class="editable">We build websites</h2>
+        <p class="subtext editable">This is the <strong>Urban</strong> template from <a href="https://cloudcannon.com/">CloudCannon</a>. Urban is a strong foundation for the web presence of your agency.</p>
 		<p><a class="button alt" href="{{ site.baseurl }}/contact/">Contact Us</a></p>
+        </div>
 	</div>
 </section>
 
@@ -19,7 +23,7 @@ title: Urban
 		</div>
 		<div>
 			<ul class="image-grid">
-				{% for client in site.clients limit: 4 %}
+				{% for client in site.clients limit: 2 %}
 					<li><a href="{{ site.baseurl }}{{ client.url }}"><img src="{% include relative-src.html src=client.image_path %}"></a></li>
 				{% endfor %}
 			</ul>
@@ -27,17 +31,31 @@ title: Urban
 	</div>
 </section>
 
-<section class="diagonal alternate">
+<section class="diagonal alternate" style="background: #da1731;">
 	<div class="container halves">
 		<div>
 			<ul class="image-list">
-				<li><img src="{{ site.baseurl }}/images/cloudcannon-logo-blue.svg" width="250" style="margin-bottom: 40px;"></li>
-				<li><img src="{{ site.baseurl }}/images/jekyll-logo-black-red-transparent.png" width="300"></li>
+				<li><img src="{{ site.baseurl }}/images/ball.png" width="300"></li>
 			</ul>
 		</div>
 		<div>
-			<h3 class="editable">Latest software, greatest perfomance</h3>
-			<p class="editable">As a new agency we get reap the benefits of the latest and greatest. We build our websites with the most up to date technology. This ensures your website is fast, efficient and reliable for many years.</p>
+			<h3 class="editable">My Skils</h3>
+            <ul style="color: black; list-style:none; ">
+            <div>
+            <li>HTML/CSS</li>
+            <li>php</li>
+            </div>
+            <div>
+            <li>JavaScript</li>
+            <li>Mysql</li>
+            </div>
+            <div>
+            <li>Symfony</li>
+            <li>Angular</li>
+            </div>
+            <li>Node.js</li>
+            </ul>
+			
 		</div>
 	</div>
 </section>
