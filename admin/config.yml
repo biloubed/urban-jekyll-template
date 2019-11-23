@@ -17,4 +17,4 @@ backend:
            widget: "list"
            fields: 
             - {label: "Name", name="name", widget="string"}
-            - {label: "Link", name="Link", widget="string" }
+            - {label: "Link", name="links", widget="string" }
