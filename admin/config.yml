@@ -2,7 +2,7 @@ backend:
  name: github
  repo: biloubed/urban-jekyll-template
 
- media_folder: "images"
+media_folder: "images"
 
 collections:
   - name: "website-settings"
